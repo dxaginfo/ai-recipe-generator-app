@@ -1,0 +1,35 @@
+{
+  "name": "ai-recipe-generator-app",
+  "version": "1.0.0",
+  "description": "Web platform that creates recipes based on available ingredients and dietary constraints using AI",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "client": "cd frontend && npm start",
+    "server": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd frontend && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dxaginfo/ai-recipe-generator-app.git"
+  },
+  "keywords": [
+    "recipe",
+    "ai",
+    "food",
+    "ingredients",
+    "dietary",
+    "nutrition"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dxaginfo/ai-recipe-generator-app/issues"
+  },
+  "homepage": "https://github.com/dxaginfo/ai-recipe-generator-app#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
